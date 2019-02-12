@@ -41,16 +41,16 @@ class tester_remove_duplicate(unittest.TestCase):
 	
 	def test_all_dups(self):
 		a = ['a']*30
-		self.assertEqual(remove_dulicates(a), ['a'])
+		self.assertEqual(remove_duplicates(a), ['a'])
 
 	def test_basic(self):
 		my_list = [0, 1,2,3,4,5,5,5,6,7,8,8,8,9]
-		self.assertEqual(remove_dulicates(my_list), range(10))
+		self.assertEqual(remove_duplicates(my_list), range(10))
 
 	def test_keep_order(self):
 		my_list = [i for i in range(10, -1, -1)]
-		test_list = my_list.append(10)
-		self.assertEqual(remove_dulicates(test_list), my_list)
+		test_list = my_list + [10]
+		self.assertEqual(remove_duplicates(test_list), my_list)
 
 class tester_overlap(unittest.TestCase):
 	def test_small(self):
@@ -96,13 +96,13 @@ class tester_mystery(unittest.TestCase):
 class tester_replace_str(unittest.TestCase):
 	def test_basic(self):
 		str_in = 'Hello World'
-		str1 = 'hello'
+		str1 = 'Hello'
 		str2 = 'world'
 		self.assertEqual(replace_str(str_in, str1, str2), 'world World')
 
 	def test_more(self):
 		str_in = 'wow what a great job'
-		str1 = 'JOB'
+		str1 = 'job'
 		str2 = ''
 		self.assertEqual(replace_str(str_in, str1, str2), 'wow what a great ')
 	def test_no_replace(self):
