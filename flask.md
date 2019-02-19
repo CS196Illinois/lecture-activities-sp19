@@ -20,7 +20,7 @@ If you are having trouble, double check the URL parameter example in the pre-lec
 
 #### Activity 2: Creating an API ####
 
-In this activity, you will create a very basic API that formats a date. APIs revolve around the idea of an *interface* — a description of commands that can be used to send or retrieve information. To describe an API, we must specify parameters and responses for each command. (Note, however, that we don't generally care exactly how the commands themselves are implmented, we just care that the commands do what they're expected to do)
+In this activity, you will create a very basic API that formats a date. APIs revolve around the idea of an *interface* — a description of commands that can be used to send or retrieve information. To describe an API, we must specify parameters and responses for each command. (Note, however, that we don't generally care exactly how the commands themselves are implemented, we just care that the commands do what they're expected to do)
 
 For this activity, you should create an API (i.e. a Flask server) with one command, called *dateconvert*, that converts a date given in MM/DD/YYYY format to one in \<Month Name\> DD, YYYY format.
 
