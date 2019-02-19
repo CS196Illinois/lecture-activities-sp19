@@ -1,4 +1,4 @@
-### Flask Lecture Activites ###
+### Flask Lecture Activities ###
 Each of the two activities below involves creating a very simple Flask server. If you've read the pre-lecture notes and installed Flask, this should take no time at all. (If you haven't read the notes, you can find them [here](https://github.com/CS196Illinois/lecture-notes-sp19/blob/master/flask.md))
 
 #### Activity 1: A Simple Greeting ####
