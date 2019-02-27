@@ -33,8 +33,8 @@ def add_assignment():
     new_assignment = dict()
     new_assignment['name'] = None # The name of the assignment
     new_assignment['date'] = None # The date of the assignment
-    new_assignment['score'] = None # The name of the assignment
-    new_assignment['total'] = None # The name of the assignment
+    new_assignment['score'] = None # The score of the assignment
+    new_assignment['total'] = None # The total points of the assignment
     assignments[student_name].append(new_assignment)
 
     return "Assignment added."
