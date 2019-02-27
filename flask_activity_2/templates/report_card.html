@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         table {
+           font-family: arial, sans-serif;
+           border-collapse: collapse;
+           width: 100%;
+         }
+
+         td, th {
+           border: 1px solid #dddddd;
+           text-align: left;
+           padding: 8px;
+         }
+
+         tr:nth-child(even) {
+           background-color: #dddddd;
+         }
+      </style>
+   </head>
+   <body>
+
+      <h2>Report Card for {{student_name}}</h2>
+
+      <table>
+        <tr>
+          <th>Assignment</th>
+          <th>Date</th>
+          <th>Grade</th>
+          <th>Out Of</th>
+        </tr>
+        {% for assignment in student_assignments %}
+        <tr>
+          <td>{{assignment['name']}}</td>
+          <td>{{assignment['date']}}</td>
+          <td>{{assignment['score']}}</td>
+          <td>{{assignment['total']}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+   </body>
+</html>
