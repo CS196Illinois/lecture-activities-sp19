@@ -17,8 +17,8 @@ class tester_freqs(unittest.TestCase):
 		self.assertEquals(count_freqs(array), answer)
 
 	def test_big(self):
-		array = range(1000000)
-		two_list = array + range(1000000)
+		array = [i for i in range(1000000)]
+		two_list = array + array
 		answer = dict(zip(array, [2]*1000000))
 		self.assertEquals(count_freqs(array), answer)
 
