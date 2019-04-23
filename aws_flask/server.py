@@ -69,4 +69,5 @@ def get_all_scores():
 
 
 if __name__ == "__main__":
+    # you may want to add a host and port parameter to this when you deploy it on ec2
     app.run()
